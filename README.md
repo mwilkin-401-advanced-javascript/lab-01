@@ -1,49 +1,53 @@
-# Lab-01 - Node Eco system
- 
-Before You Begin
-Create a new git repository
+# LAB-01  
 
-Copy the contents of this lab folder into that repository at the root level
+##Project: Node Eco system
 
-Initialize this lab folder as a new node module, install your dependencies, setup your npm script commands, and pull in your config files
+## Author: Matt Wilkin
 
-Setup the package.json file to run lint checks and tests against the greet and arithmetic modules
+### Links and Resources
 
-Getting Started
-In the start_code folder, there is a partial implementation of both the arithmetic and greet modules.
+* [submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-01/pull/2)
 
-In the root folder, you’ll find a file called index.js that wires in the arithmetic module and attempts to run functions imported from them.
+* [travis](https://travis-ci.com/mwilkin-401-advanced-javascript/lab-01)
 
-In the __tests__ folder, you’ll find a file called arithmetic.test.js that wires in the arithmetic module but does no tests.
+#### back-end (when applicable)
 
-### Requirements
-#### Implementation
-Use the index.js file to both “greet” and perform “math” operations using the imported functions from the 2 modules
-console.log() the return values
-#### Part 1: Arithmetic Module
-Add support for multiply and divide (be careful to not divide by zero!)
-Refactor the add, subtract, multiply to allow for an array of params so that you can do deeper calculations
-DRY the code by externalizing any type checking or argument validation from your methods
-Software Engineering Note! Externalizing type checking and argument validation is a good exersize in refactoring code
+#### front-end (when applicable)
 
-#### Part 2: Greet Module
-Create a NodeJS module in the lib directory named greet.js. This module should export a single function.
+### Documentation
 
-The greet function should have a single parameter (arity of one) that should expect a string as it’s input
-The greet function should return the input name, concatenated with “hello “: eg. (“hello susan”)
-The greet function should return null if the input is not a string
-Testing
-Arithmetic Module
+api docs (API servers)
+jsdoc (Server assignments)
+styleguide (React assignments)
+### Modules
+faker.js
 
-Use the faker module to randomize input
-Test each method for proper use (invoked with number arguments)
-Test each method for improper use (invoked with one or more non-number arguments)
-Greet Module
+Exported Values and Methods
+foo(thing) -> string
+Usage Notes or examples
 
-Use the faker module to randomize input
-Write a test that expects the greet module to return null when you supply non-string values
-Write a test the expects the greet module to return 'hello world'
-This should happen when invoked with 'world' as the first argument
+bar(array) -> array
+Usage Notes or examples
 
-#### Assignemnt Submission Instructions
-Refer to the the lab submission instructions for the complete lab submission process and expectations
+### Setup
+.env requirements
+
+PORT - Port Number
+
+MONGODB_URI - URL to the running mongo instance/db
+
+Running the app
+
+npm start
+
+### Tests
+
+#### How do you run tests? npm run test-watch
+
+What assertions were made?
+
+What assertions need to be / should be made?
+
+UML
+
+Link to an image of the UML for your application and response to events
