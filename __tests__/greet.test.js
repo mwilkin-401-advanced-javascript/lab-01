@@ -1,7 +1,7 @@
 'use strict';
 
 const greet = require('../lib/greet.js');
-var faker = require('faker');
+// var faker = require('faker');
 
 
 // function getRandomWord(){
