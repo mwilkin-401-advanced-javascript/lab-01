@@ -38,4 +38,13 @@ describe('Arithmetic Module', () => {
     expect(sum2).toEqual(sum1);
   });
 
+  it('should divide two numbers', () =>{
+    let x = randomNumber;
+    let y = randomNumber;
+    let sum1 = x / y;
+
+    var sum2 = arithmetic.divide(x, y);
+
+    expect(sum2).toEqual(sum1);
+  });
 });
