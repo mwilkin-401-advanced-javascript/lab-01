@@ -11,40 +11,52 @@ describe('Arithmetic Module', () => {
   it('should add two numbers', () =>{
     let x = randomNumber;
     let y = randomNumber;
-    let sum1 = x + y;
+    let num1 = x + y;
 
-    var sum2 = arithmetic.add(x, y);
+    var num2 = arithmetic.add(x, y);
 
-    expect(sum2).toEqual(sum1);
+    expect(num2).toEqual(num1);
   });
 
   it('should subtract two numbers', () =>{
     let x = randomNumber;
     let y = randomNumber;
-    let sum1 = x - y;
+    let num1 = x - y;
 
-    var sum2 = arithmetic.subtract(x, y);
+    var num2 = arithmetic.subtract(x, y);
 
-    expect(sum2).toEqual(sum1);
+    expect(num2).toEqual(num1);
   });
 
   it('should multiply two numbers', () =>{
     let x = randomNumber;
     let y = randomNumber;
-    let sum1 = x * y;
+    let num1 = x * y;
 
-    var sum2 = arithmetic.multiply(x, y);
+    var num2 = arithmetic.multiply(x, y);
 
-    expect(sum2).toEqual(sum1);
+    expect(num2).toEqual(num1);
   });
 
   it('should divide two numbers', () =>{
     let x = randomNumber;
     let y = randomNumber;
-    let sum1 = x / y;
+    let num1 = x / y;
 
-    var sum2 = arithmetic.divide(x, y);
+    var num2 = arithmetic.divide(x, y);
 
-    expect(sum2).toEqual(sum1);
+    expect(num2).toEqual(num1);
   });
+
+  it('should return runn if any of the arguments are Nan', () => {
+    expect(arithmetic.add([],6)).toBeNull();
+    expect(arithmetic.add(true,6)).toBeNull();
+    expect(arithmetic.add('10',6)).toBeNull();
+    expect(arithmetic.add({},6)).toBeNull();
+    expect(arithmetic.add(null,6)).toBeNull();
+    expect(arithmetic.add('6','six')).toBeNull();
+    expect(arithmetic.add(undefined,6)).toBeNull();
+
+  });
+
 });
