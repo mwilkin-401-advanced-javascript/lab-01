@@ -48,7 +48,9 @@ describe('Arithmetic Module', () => {
     expect(num2).toEqual(num1);
   });
 
-  it('should return runn if any of the arguments are Nan', () => {
+  // Improper arguments
+
+  it('should return null if any of the arguments are Nan', () => {
     expect(arithmetic.add([],6)).toBeNull();
     expect(arithmetic.add(true,6)).toBeNull();
     expect(arithmetic.add('10',6)).toBeNull();
@@ -56,6 +58,17 @@ describe('Arithmetic Module', () => {
     expect(arithmetic.add(null,6)).toBeNull();
     expect(arithmetic.add('6','six')).toBeNull();
     expect(arithmetic.add(undefined,6)).toBeNull();
+
+  });
+
+  it('should return null if any of the arguments are Nan', () => {
+    expect(arithmetic.subtract([],6)).toBeNull();
+    expect(arithmetic.subtract(true,6)).toBeNull();
+    expect(arithmetic.subtract('10',6)).toBeNull();
+    expect(arithmetic.subtract({},6)).toBeNull();
+    expect(arithmetic.subtract(null,6)).toBeNull();
+    expect(arithmetic.subtract('6','six')).toBeNull();
+    expect(arithmetic.subtract(undefined,6)).toBeNull();
 
   });
 
