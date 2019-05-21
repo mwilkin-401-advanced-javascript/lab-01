@@ -11,4 +11,12 @@ describe('Greet Module', () => {
     expect(message).toEqual(expectedValue);
   });
 
+    it('should return `Hello, {word} when given a word', () => {
+    let param = 'world';
+    let expectedValue = `Hello, ${param}`;
+    let message = greet(param);
+
+    expect(message).toEqual(expectedValue);
+  });
+
 });
