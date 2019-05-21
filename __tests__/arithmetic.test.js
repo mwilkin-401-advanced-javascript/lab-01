@@ -50,7 +50,7 @@ describe('Arithmetic Module', () => {
 
   // Improper arguments
 
-  it('should return null if any of the arguments are Nan', () => {
+  it('should return null if any of the arguments are NaN', () => {
     expect(arithmetic.add([],6)).toBeNull();
     expect(arithmetic.add(true,6)).toBeNull();
     expect(arithmetic.add('10',6)).toBeNull();
@@ -61,7 +61,7 @@ describe('Arithmetic Module', () => {
 
   });
 
-  it('should return null if any of the arguments are Nan', () => {
+  it('should return null if any of the arguments are NaN', () => {
     expect(arithmetic.subtract([],6)).toBeNull();
     expect(arithmetic.subtract(true,6)).toBeNull();
     expect(arithmetic.subtract('10',6)).toBeNull();
@@ -72,7 +72,7 @@ describe('Arithmetic Module', () => {
 
   });
 
-  it('should return null if any of the arguments are Nan', () => {
+  it('should return null if any of the arguments are NaN', () => {
     expect(arithmetic.multiply([],6)).toBeNull();
     expect(arithmetic.multiply(true,6)).toBeNull();
     expect(arithmetic.multiply('10',6)).toBeNull();
@@ -83,7 +83,7 @@ describe('Arithmetic Module', () => {
 
   });
 
-  it('should return null if any of the arguments are Nan', () => {
+  it('should return null if any of the arguments are NaN', () => {
     expect(arithmetic.divide([],6)).toBeNull();
     expect(arithmetic.divide(10,[])).toBeNull();
     expect(arithmetic.divide(true,6)).toBeNull();
