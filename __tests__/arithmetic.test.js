@@ -15,7 +15,7 @@ describe('Arithmetic Module', () => {
 
     var sum2 = arithmetic.add(x, y);
 
-    expect(sum2).to.be.equal(sum1);
+    expect(sum2).toEqual(sum1);
   });
 
 });
