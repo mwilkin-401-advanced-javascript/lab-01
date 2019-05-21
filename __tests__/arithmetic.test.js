@@ -72,4 +72,27 @@ describe('Arithmetic Module', () => {
 
   });
 
+  it('should return null if any of the arguments are Nan', () => {
+    expect(arithmetic.multiply([],6)).toBeNull();
+    expect(arithmetic.multiply(true,6)).toBeNull();
+    expect(arithmetic.multiply('10',6)).toBeNull();
+    expect(arithmetic.multiply({},6)).toBeNull();
+    expect(arithmetic.multiply(null,6)).toBeNull();
+    expect(arithmetic.multiply('6','six')).toBeNull();
+    expect(arithmetic.multiply(undefined,6)).toBeNull();
+
+  });
+
+  it('should return null if any of the arguments are Nan', () => {
+    expect(arithmetic.divide([],6)).toBeNull();
+    expect(arithmetic.divide(10,[])).toBeNull();
+    expect(arithmetic.divide(true,6)).toBeNull();
+    expect(arithmetic.divide('10',6)).toBeNull();
+    expect(arithmetic.divide({},6)).toBeNull();
+    expect(arithmetic.divide(null,6)).toBeNull();
+    expect(arithmetic.divide('6','six')).toBeNull();
+    expect(arithmetic.divide(undefined,6)).toBeNull();
+    expect(arithmetic.divide(0,6)).toBeNull();
+
+  });
 });
