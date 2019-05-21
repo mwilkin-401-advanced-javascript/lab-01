@@ -1,6 +1,12 @@
 'use strict';
 
 const greet = require('../lib/greet.js');
+var faker = require('faker');
+
+
+// function getRandomWord(){
+//   return faker.random.word();
+// }
 
 describe('Greet Module', () => {
   it('should return `Hello, {word} when given a word', () => {
